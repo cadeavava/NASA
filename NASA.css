@@ -1,0 +1,226 @@
+@font-face {
+    font-family: "ALphaCentauri";
+    src: url(fontes/Alphacentauri-MVY4p.ttf);
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box; /*as margens e padding são também conteúdo do elemento, então se eu por uma margem, e eu quero que o tamanho total do elemento seja 200px, o tamanho total ainda será 200px com a margem inclusa*/
+    background-color: black;
+    color: white;
+}
+
+nav
+{
+    position: fixed; /*que fica no lugar mesmo rolando a página*/
+    z-index: 100; /*esse elemento vai ficar na frente de outros q tem z-index (eixo z = eixo profundidade) menor ou q não tem definido*/
+    height: 2vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /*distribui o espaçamento dos elementos filho igualmente*/
+    align-items: center;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    background-color: black;
+    color: white;
+    top: 0vh;
+    padding-top: 3.5vh;
+    padding-bottom: 3.5vh;
+}
+
+.logo
+{
+    font-weight: 600;
+    font-size: 3vh;
+}
+
+.nav-links ul
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-links ul li
+{
+    list-style: none;
+    padding: 0% 1%;
+    margin-left: -10vw;
+}
+
+.nav-links ul li img
+{
+    transform: scale(0.2);
+}
+
+header
+{
+    margin-bottom: 12vh;
+}
+
+section
+{
+    height: 100vh;
+    overflow: hidden;
+    margin-top: -55vh;
+}
+
+.bg img
+{
+    width: 110vw;
+    height: 110vh;
+    filter: brightness(0.6);
+}
+
+.bg
+{
+    position: absolute;
+    top: -5vh;
+}
+
+.pedra1
+{
+    position: absolute !important;
+    left: 10vw !important;
+    top: 20vh !important;
+}
+
+.pedra1 img
+{
+    width: 40%;
+    filter: brightness(0.5);
+}
+
+.texto h1
+{
+    font-family: "AlphaCentauri" !important;
+    font-size: 7vw;
+    color: white;
+    letter-spacing: 22px;
+    position: absolute;
+    top: 35vh;
+    left: 36vw;
+}
+
+.texto2 p
+{
+    font-size: 1.5vw;
+    color: white;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 60vh;
+    left: 41vw;
+    z-index: 15;
+    white-space: nowrap;
+}
+
+.terra img
+{
+    width: 32vw;
+    position: absolute;
+    left: 33vw;
+    top: 25vh;
+    z-index: 1;
+    filter: brightness(0.9);
+}
+
+.meio
+{
+    left: -150px !important;
+    bottom: -100px !important;
+    top: unset !important;
+    position: absolute;
+}
+
+.meio img
+{
+    width: 100%;
+    z-index: 2;
+    left: -20px;
+    top: 20vh !important;
+    filter: brightness(0.8);
+}
+
+.frente
+{
+    right: -50px !important;
+    bottom: -200px !important;
+    top: 0px !important;
+    left: unset !important;
+    position: absolute;
+}
+
+.frente img
+{
+    width: 400px;
+    height: 110vh;
+    z-index: 3;
+    filter: brightness(0.5);
+}
+
+.conteudo_principal
+{
+    text-align: center;
+}
+
+.conteudo2
+{
+    text-align: justify;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+footer
+{
+    
+    bottom: 0; left: 0; right: 0;
+    background-color: #111111;
+    height: auto;
+    padding-top: 40px;
+    width: 100vw;
+    color: white;
+}
+
+.footer-cont
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+h3
+{
+    font-size: 4vh;
+    font-weight: 500;
+    margin-top: -2vh;
+    font-family: "AlphaCentauri";
+}
+
+.footer-cont p
+{
+    max-width: 40vw;
+    margin-top: -3vh;
+    color: #cacdd2;
+}
+
+.naasa
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-bottom
+{
+    background-color: #000000;
+    width: 100vw;
+    text-align: center;
+    padding: 1vh;
+}

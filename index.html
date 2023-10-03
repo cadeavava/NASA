@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Astronomy Picture of the Day</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Valentina Fischer Martins Pacheco">
+        <meta name="description" content="Site que mostra a foto astronômica do dia tirada pela Nasa, junto de uma descrição">
+        <meta name="keywords" content="Nasa, Astronomy, Picture, Of, The, Day, Astronomia, Foto, Universo">
+        <link rel="stylesheet" type="text/css" href="NASA.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!--font awesome-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!--jquery-->
+        <script src="apod.js"></script> <!--meu script-->
+        <link rel="icon" type="image/jpeg" href="imagens/logo.png">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> <!--parallax efeito de animação-->
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">Astronomy Picture Of The Day.</div>
+                <div class="nav-links">
+                  <ul>
+                    <li><img src="imagens/nasa.png"></li>
+                  </ul>
+                </div>
+              </nav>
+        </header>
+
+        <section class="section1">
+
+        </section>
+
+        <section class="section2">
+            <div id="scene">
+                <div data-depth="0.1" class="bg">
+                    <img src="imagens/background.png" alt="imagem do espaço, com 2 planetas, algumas rochas e estrelas"> 
+                </div>
+                <div data-depth="0.2" class="pedra1">
+                    <img src="imagens/pedra.png" alt="imagem de uma pedra">
+                </div>
+                <div data-depth="1.1" class="terra">
+                    <img src="imagens/terra.png" alt="imagem do planeta Terra">
+                </div>
+                <div data-depth="0.1" class="texto"><h1>APOD</h1></div>
+                <div data-depth="0.1" class="texto2"><p>Check Today's Picture</p></div>
+                <div data-depth="0.4" class="meio">
+                    <img src="imagens/meio.png" alt="imagem de várias rochas no chão">
+                </div>
+                <div data-depth="0.1" class="frente">
+                    <img src="imagens/frente.png" alt="imagem de rocha brilhosa">
+                </div>
+            </div>
+        </section>
+
+        <div class="conteudo_principal">
+            <h1 id="title"></h1>  
+            <img alt="Imagem do dia do espaço tirada pela Nasa" id="img"></img>
+        </div>
+        <div class="conteudo2">
+            <h1 id="cpright"></h1>
+            <p id="exp"></p>
+            <p>Amazing, right? See you tomorrow!</p>
+        </div>
+        
+       <footer>
+        <div class="footer-cont">
+            <h3>APOD</h3>
+            <p>Astronomy Picture Of The Day is a website where we share our daily space pictures directly from NASA</p>
+            <ul class="naasa">
+                <li><a href="https://www.nasa.gov/"><img alt="Icone da Nasa" src="imagens/nasa-logo.svg"></img></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Design By - Valentina Fischer</p>
+        </div>
+       </footer>
+    </body>
+</html>
