@@ -224,3 +224,118 @@ h3
     text-align: center;
     padding: 1vh;
 }
+
+@media (max-width: 480px)
+{
+    nav 
+    {
+        position: fixed; /*que fica no lugar mesmo rolando a página*/
+        z-index: 100; /*esse elemento vai ficar na frente de outros q tem z-index (eixo z = eixo profundidade) menor ou q não tem definido*/
+        height: 2vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-between; /*distribui o espaçamento dos elementos filho igualmente*/
+        align-items: center;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        background-color: black;
+        color: white;
+        top: 0vh;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+
+    .logo
+    {
+        font-weight: 600;
+        font-size: 1.5vh;
+        width: auto;
+    }
+
+    .nav-links ul li
+    {
+        list-style: none;
+        padding: 0% 1%;
+        margin-left: 2vw;
+    }
+
+    .nav-links ul li img
+    {
+        transform: scale(0.1);
+    }
+
+    #img
+    {
+        width: 100%;
+    }
+
+    .pedra1
+    {
+        position: absolute !important;
+        left: 10vw !important;
+        top: 20vh !important;
+        width: 30%;
+    }
+
+    .bg img
+    {
+        width: auto;
+        height: 35vh;
+        filter: brightness(0.6);
+    }
+
+    .texto h1
+    {
+        font-size: 6vh;
+        letter-spacing: 1vw;
+        position: absolute;
+        top: 15vh;
+        left: 28vw;
+    }
+
+    .texto2 p
+    {
+        display: none;
+    }   
+
+    .terra img
+    {
+        width: 70vw;
+        position: absolute;
+        left: 17vw;
+        top: 9vh;
+    }
+
+    .frente img
+    {
+        display: none;
+    }
+
+    .frente
+    {
+        display: none;
+    }
+
+    .conteudo_principal
+    {
+        text-align: center;
+        margin-top: -50vh;
+    }
+
+    .conteudo2
+    {
+        text-align: justify;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    h3
+    {
+        font-size: 3vh;
+    }
+
+    .footer-cont p
+    {
+        margin-top: -1vh;
+    }
+}
